@@ -1,0 +1,30 @@
+calendar-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-bottom: 75% !important;
+    height: 0;
+    overflow: hidden;
+}
+calendar-container iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 100%;
+}
+
+td:nth-child(2) {
+    text-align: center;
+}
+
+th {
+    text-align: left;
+}
+
+iframe {
+    border: 0; 
+    height: 600px;
+    width: 800px;
+}
