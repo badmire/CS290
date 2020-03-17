@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <link rel="stylesheet" href="css\css_default.css">
+    <link rel="stylesheet" href ="css\css_shoppinglist.css">
+    <title>Century Commander</title>
+    <script src="shopping_page_script.js"></script>
+</head>
+
+<body>
+    <a><img id="banner" src="img\banner_hydra.jpg" alt="banner, hydra"></a>
+    <div>
+        <ul class="topnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="standings.html">Standings</a></li>
+            <li><a class= "active" href="shopping_list.html">Shopping List Maker</a></li>
+        </ul>
+    </div>
+    <div class="dropdown">
+        <button class="dropButton">Shopping List</button>
+        <div class="dropContent">
+            <a href="index.html">Home</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="about.html">About</a>
+            <a href="standings.html">Standings</a>
+            <a href="rules.html">Rules</a>
+        </div>
+    </div>
+<div>
+<br>
+<form id="data_gather">
+    <button id="submit_button" onclick="server_shopping()">Build List!</button>
+    <br>
+    <a href="shopping_list.txt" download>
+    <br>
+    <button id="download_button" disabled>Download!</button>
+    <br>
+    </a>
+    <p>
+    This tool is designed to create a shopping list
+
+    The cards must be in the correct format, see the default for an example.
+    </p>
+<textarea id="shopping_list" rows="27" cols = "40" form = "data_gather" name="list">
+4 Arbor Elf
+1 Bloodbraid Elf</textarea>
+</form>
+</div>
+</body>
+
+</html>

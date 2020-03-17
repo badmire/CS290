@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <link rel="stylesheet" href="css\css_default.css">
+    <script src="scripting.js"></script>
+    <title>Century Commander</title>
+</head>
+
+<body>
+    <a><img id="banner" src="img\banner_hydra.jpg" alt="banner, hydra"></a>
+    <div>
+        <ul class="topnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="standings.html">Standings</a></li>
+            <li><a href="shopping_list.html">Shopping List Maker</a></li>
+        </ul>
+    </div>
+    <div class="dropdown">
+        <button class="dropButton">Schedule</button>
+        <div class="dropContent">
+            <a href="index.html">Home</a>
+            <a href="rules.html">Rules</a>
+            <a href="about.html">About</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="shopping_list.html">Shopping List Maker</a>
+        </div>
+    </div>
+
+
+    <div id="standings">
+        <div>
+            <h1>Winter 2019 Standings</h1>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Season Record (W:L)</th>
+                    <th>Deck</th>
+                </tr>
+                <tr>
+                    <td>Kyle</td>
+                    <td>5-1</td>
+                    <td>Mono-Green Stompy</td>
+                </tr>
+                <tr>
+                    <td>Brandon</td>
+                    <td>4-2</td>
+                    <td>Judeth Aristorats</td>
+                </tr>
+                <tr>
+                    <td>Javan</td>
+                    <td>4-2</td>
+                    <td>Red/Blue Spells Matter</td>
+                </tr>
+                <tr>
+                    <td>Althea</td>
+                    <td>3-3</td>
+                    <td>Lions and Angels and Demons, Oh my!</td>
+                </tr>
+                <tr>
+                    <td>Reggie</td>
+                    <td>2-4</td>
+                    <td>5-Color Combo</td>
+                </tr>
+                <tr>
+                    <td>Matthais</td>
+                    <td>1-5</td>
+                    <td>Bad Skred Red</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br><br>
+    <a>Add a new leauge entry</a><br><br>
+    <div>
+        <label for="title">Leauge Name: </label>
+        <input id="title" type="text" name="title"><br><br>
+    </div>
+
+    <div id="lines">
+        <div id="player_form">
+            <div>
+                <form>
+                    <label for="name">Player Name: </label>
+                    <input type="text" name="name">
+                    <label for="deck">Deck Name: </label>
+                    <input type="text" name="deck" size="10">
+                    <label for="wins">Wins: </label>
+                    <input type="text" name="wins" size="2">
+                    <label for="lose">Losses: </label>
+                    <input type="text" name="lose" size="2"><br>
+                </form>
+            </div>
+        </div>
+    </div>
+    <button type="button" onclick="add_player()">Add Player</button>
+    <button type="button" onclick="add_leauge_entry()">Add Entry</button>
+
+
+</body>
+
+</html>

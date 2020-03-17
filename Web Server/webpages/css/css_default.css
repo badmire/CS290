@@ -1,0 +1,146 @@
+html {
+    background-color: #f5f5dc;
+}
+
+body {
+    margin: auto;
+    width: 50%;
+    min-width: 400px;
+    padding: 10px;
+}
+
+#banner {
+    width:100%;
+    margin: 0px;
+}
+
+.topnav {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(114, 80, 52);
+}
+
+.topnav li {
+    float: left;
+    padding-left: .9em;
+}
+
+.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.bodytext {
+    font-size: 18pt;
+    float: left;
+}
+
+.mainheader {
+    font-size: 30pt
+}
+
+.active {
+    background-color: rgb(135, 100, 72);
+}
+
+.dropdown {
+    display:none;
+}
+
+@media only screen and (max-width:500px){
+.topnav {
+    display: none;
+}
+
+.topnav a {
+    display: none;
+}
+
+.dropButton {
+  background-color: rgb(135, 100, 72);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.dropdown {
+  position: inline;
+  background-color: #f9f9f9;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 400px;
+  max-width: 50%;
+  /* box-sizing: border-box; */
+  margin: 0;
+}
+
+.dropContent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 400px;
+  box-sizing: border-box;
+  margin: 0;
+  /* min-width: 100px; */
+}
+
+.dropContent a {
+  color: black;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  width: 400px;
+  margin: 0;
+  min-width: 400px;
+  max-width: 50%;
+  /* min-width: 100px; */
+}
+
+.dropContent a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropContent {
+  display: block;
+}
+
+.dropdown:hover .dropButton {
+  background-color: rgb(135, 100, 72);
+}
+
+body {
+    margin: auto;
+    width: 50%;
+    min-width: 400px;
+    padding: 10px;
+}
+
+#banner {
+    width:100%;
+    margin: 0px;
+}
+
+.bodytext {
+    font-size: 18pt;
+    float: left;
+}
+
+.mainheader {
+    font-size: 30pt
+}
+
+
+}
